@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
+    <link rel="icon" href="./assets/img/icon.jpg">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/themify-icons/themify-icons.css">
 </head>
@@ -82,7 +83,7 @@
                     <h3 class="place-heading">New York</h3>
                     <p class="place-time">Fri 27 Nov 2016</p>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <a href="#" class="btn">Buy Tickets</a>
+                    <button class="btn" onclick="open_tickets()">Buy Tickets</button>
                   </div>
                 </div>
                   <div class="col col-third">
@@ -91,7 +92,7 @@
                       <h3 class="place-heading">Paris</h3>
                       <p class="place-time">Sat 28 Nov 2016</p>
                       <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                      <a href="#" class="btn">Buy Tickets</a>
+                      <button class="btn" onclick="open_tickets()">Buy Tickets</button>
                     </div>
                   </div>
                   <div class="col col-third">
@@ -100,7 +101,7 @@
                     <h3 class="place-heading">San Francisco</h3>
                     <p class="place-time">Sun 29 Nov 2016</p>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <a href="#" class="btn">Buy Tickets</a>
+                    <button class="btn" onclick="open_tickets()">Buy Tickets</button>
                   </div>  
                   </div>
                 </div>
@@ -108,6 +109,7 @@
             </div>
           </div>
           <div class="clear"></div>
+        
           <!-- contact-section -->
           <div id="contact">
             <div class="content-section">
@@ -143,11 +145,9 @@
             </div>
           <!-- end contact -->
           <div class="map-section">
-            <img src="./assets/img/map.jpg" alt="map">
+            <img src="./assets/img/map1.jpeg" alt="map" name="map">
           </div>
-      </div>
-
-      <!-- footer -->
+          <!-- footer -->
       <div id="footer" class="text-center">
         <div class="social">
           <a href="#"><i class="ti-facebook"></i></a>
@@ -157,8 +157,42 @@
           <a href="#"><i class="ti-twitter-alt"></i></a>
           <a href="#"><i class="ti-github"></i></a>
         </div>
-        <p class="copyright">Remake by <a href="#">DarkStar</a></p>
+        <p class="copyright">Remake by <a target="_blank" href="https://github.com/Dark-Star3110/demo-web-the-band">DarkStar</a></p>
+      </div>
+<!-- end main -->
+      </div>
+
+  <div id="tickets-screen">
+    <div id="tickets">
+      <div id="header-tick">
+          <button id="x-btn" onclick="close_tickets()">X</button>
+        <div id="header-text">
+          <h2 class="text-white text-center"><i class="ti-bag"></i> Tickets</h2>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div id="content-tick">
+        <p class="content-tick-text"><i class="ti-shopping-cart-full">Tickets, $15 per person</i></p>
+        <div class="row">
+          <div class="col col-full">
+           <input class="content-tick-ipt" type="text" name="" placeholder="How many?" required id="">
+          </div>
+        </div>
+      <p class="content-tick-text"><i class="ti-user">Send To</i></p>
+        <div class="row">
+          <div class="col col-full">
+           <input class="content-tick-ipt" type="email" name="" placeholder="Enter email" required id="">
+          </div>
+        </div>
+        <button id="pay-btn" class="tick-btn">PAY <i class="ti-check"></i></button>
+        <div id="footer-tick-left">
+          <button id="close-btn" class="tick-btn" onclick="close_tickets()">Close<i class="ti-close"></i></button>
+        </div>
+        <div id="footer-tick-right"><p>Need <a target="_blank" href="https://www.google.com.vn/?hl=vi">help?</a></p></div>  
+      </div>
       </div>
   </div>
+  
+  <script src="./assets/js/my.js"></script>
 </body>
 </html>

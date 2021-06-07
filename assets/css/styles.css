@@ -6,6 +6,9 @@
 }
 
 /* common */
+#main{
+    display: block;
+}
 html{
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
@@ -67,6 +70,7 @@ html{
     padding: 8px 16px;
     display: inline-block;
     margin-top: 15px;
+    border: none;
 }
 
 .btn:hover{
@@ -86,9 +90,6 @@ html{
 3-mau sac
 4-kieu dang
  */
-#main{
-
-}
 
 #header{
     position: fixed;
@@ -192,10 +193,6 @@ html{
 #slider .text-p{
     font-size: 15px;
     margin-top: 25px;
-}
-
-#content{
-
 }
 
 .content-section{
@@ -383,4 +380,97 @@ html{
 
 #footer a:hover{
     opacity: 0.4;
+}
+
+#tickets-screen{
+    z-index: 3;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 100px;
+}
+
+#tickets{
+    
+    margin: auto;
+    max-width: 900px;
+    box-shadow:4px #757575;
+    
+}
+
+#header-tick{
+    background-color: rgb(0,150,136);
+}
+#header-text{
+    max-width: 868px;
+    margin: 10px 0px;
+    padding: 32px 16px;
+}
+#header-text h2{
+    height: 64px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
+}
+
+#x-btn{
+    float: right;
+    padding: 8px 16px;
+    background-color: rgb(0,150,136);
+    border: none;
+    color: #fff;
+}
+#x-btn:hover{
+    color: #000;
+    background-color: #ddd;
+}
+
+#content-tick{
+    padding: 0px 16px;
+}
+
+.content-tick-text{
+    margin: 15px 0px;
+}
+
+.content-tick-ipt{
+    padding: 8px;
+    width: 100%;
+    border: 1px solid rgb(204,204,204);
+}
+
+#pay-btn{
+    background-color: rgb(0,150,136);
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#close-btn{
+    background-color:#f44336;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#footer-tick-left{
+    float: left;
+}
+
+#footer-tick-right{
+    float: right;
+}
+
+
+#tickets .tick-btn:hover{
+    color: #000;
+    background-color: #ddd;
 }
