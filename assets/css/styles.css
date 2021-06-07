@@ -76,6 +76,7 @@ html{
 .btn:hover{
     background-color:#ddd;
     color: #000;
+    cursor: pointer;
 }
 
 /* -------------- */
@@ -422,10 +423,6 @@ html{
     border: none;
     color: #fff;
 }
-#x-btn:hover{
-    color: #000;
-    background-color: #ddd;
-}
 
 #content-tick{
     padding: 0px 16px;
@@ -473,4 +470,5 @@ html{
 #tickets .tick-btn:hover{
     color: #000;
     background-color: #ddd;
+    cursor: pointer;
 }
