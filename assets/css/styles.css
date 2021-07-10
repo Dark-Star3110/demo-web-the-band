@@ -198,6 +198,14 @@ html{
     margin-left: 20px;
 }
 
+#nav-mobile li:hover .subnav-mobile{
+    display: block;
+}
+
+#nav-mobile .subnav-mobile{
+    display: none;
+}
+
 #nav-mobile a{
     text-decoration: none;
     color: #333;
@@ -205,7 +213,7 @@ html{
     font-size: 20px;
 }
 
-#nav-mobile a:hover{
+#nav-mobile a:active{
     background-color: #757575;
     color: #fff;
 }
@@ -218,6 +226,10 @@ html{
     height: 28px;
     color: #666;
     cursor: pointer;
+}
+
+.nav-mobile-select{
+    display: block;
 }
 
 .nav_bars-btn{
@@ -284,15 +296,17 @@ html{
     font-style: italic;
 }
 
-#content .member{
-    float: left;
-}
-
 #content #about-inf-member{
     padding: 32px 0px;
     overflow: hidden;
     text-align: center;
+    display: flex;
 }
+
+/* #content .member{
+    width: 33.33%;
+} */
+
 
 #content .section-text{
     text-align: justify;
@@ -304,6 +318,7 @@ html{
 #content .member p{
     width: 256px;
     height: 22px;
+    margin: auto;
 }
 
 #content .member img{
@@ -354,9 +369,9 @@ html{
     margin-top: 32px;
 }
 
-.place-item{
+/* .place-item{
     width: 33.333%;
-}
+} */
 
 .place-img{
     /* width: 245px;
@@ -538,8 +553,8 @@ html{
     cursor: pointer;
 }
 
-/* Mobile */
-@media (max-width:63.75em){
+/* Mobile  Tablet*/
+@media (max-width:63.9975em){
     .nav_bars-btn{
         display: block;
     }
@@ -547,6 +562,14 @@ html{
     #nav-pc,.subnav-pc{
         display: none;
     }
+}
+
+/* Mobile */
+@media (max-width:46.25em){
+    #content #about-inf-member{
+        flex-direction: column;
+    }
+    
 }
 
 @keyframes Fadein{

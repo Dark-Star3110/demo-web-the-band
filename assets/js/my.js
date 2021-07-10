@@ -22,3 +22,23 @@ function close_tickets(){
     document.getElementById("tickets-screen").style.display="none";
     document.getElementById("main").style.display="block";
 }
+
+// tat menu khi select
+ // let check=document.getElementById('nav-mobile-checkbox').checked;
+ let mobileMenu=document.getElementById('mobile-menu-btn');
+    
+ let menuItems = document.querySelectorAll('#nav-mobile li a[href*="#"]');
+ // console.log(menuItems);
+ for(let i=0;i<menuItems.length;i++){
+   let menuItem=menuItems[i];
+   menuItem.onclick= function(event){
+     let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav-mobile');
+      if(isParentMenu){
+        console.log(menuItem);
+        event.preventDefault();
+      }
+      else{
+       document.getElementById('nav-mobile-checkbox').checked=false;
+      }
+   }
+ }
