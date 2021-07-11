@@ -198,7 +198,7 @@ html{
     margin-left: 20px;
 }
 
-#nav-mobile li:hover .subnav-mobile{
+#nav-mobile li:active .subnav-mobile{
     display: block;
 }
 
@@ -207,10 +207,11 @@ html{
 }
 
 #nav-mobile a{
+    height: 48px;
     text-decoration: none;
     color: #333;
     padding: 10px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 #nav-mobile a:active{
@@ -228,7 +229,7 @@ html{
     cursor: pointer;
 }
 
-.nav-mobile-select{
+.nav-mobile-select,.nav-mobile-link{
     display: block;
 }
 
@@ -366,7 +367,7 @@ html{
 .place-list{
     padding: 48px 0px;
     overflow: hidden;
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 /* .place-item{
@@ -562,14 +563,36 @@ html{
     #nav-pc,.subnav-pc{
         display: none;
     }
+    
+}
+/* Tablet */
+@media (min-width:46.25em) and (max-width:63.9975em){
+    #content #about-inf-member{
+        margin-left: -22px;
+    }
 }
 
 /* Mobile */
 @media (max-width:46.25em){
+    .s-col-full,.s-max-width{
+        width: 100%;
+    }
+
     #content #about-inf-member{
         flex-direction: column;
     }
     
+    #content .member img{
+        width: 50%;
+    }
+
+    .adress-inf{
+        margin-top: 16px;
+    }
+
+    .s-mt-8{
+        margin-top: 8px;
+    }
 }
 
 @keyframes Fadein{

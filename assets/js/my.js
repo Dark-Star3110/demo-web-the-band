@@ -34,7 +34,7 @@ function close_tickets(){
    menuItem.onclick= function(event){
      let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav-mobile');
       if(isParentMenu){
-        console.log(menuItem);
+        // console.log(menuItem);
         event.preventDefault();
       }
       else{
