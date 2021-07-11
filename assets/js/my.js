@@ -14,14 +14,6 @@ function switch_img(){
         setTimeout("switch_img()",4000);
     }
 }
-function open_tickets(){
-    document.getElementById("tickets-screen").style.display="block";
-    document.getElementById("main").style.display="none";
-}
-function close_tickets(){
-    document.getElementById("tickets-screen").style.display="none";
-    document.getElementById("main").style.display="block";
-}
 
 // tat menu khi select
  // let check=document.getElementById('nav-mobile-checkbox').checked;

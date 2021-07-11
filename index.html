@@ -115,7 +115,7 @@
                     <h3 class="place-heading">New York</h3>
                     <p class="place-time">Fri 27 Nov 2016</p>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <button class="btn s-max-width" onclick="open_tickets()">Buy Tickets</button>
+                    <label for="buy-tickets-checkbox" class="btn s-max-width" >Buy Tickets</label>
                   </div>
                 </div>
                   <div class="col col-third mt-16 s-col-full">
@@ -124,7 +124,7 @@
                       <h3 class="place-heading">Paris</h3>
                       <p class="place-time">Sat 28 Nov 2016</p>
                       <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                      <button class="btn s-max-width" onclick="open_tickets()">Buy Tickets</button>
+                      <label for="buy-tickets-checkbox" class="btn s-max-width" >Buy Tickets</label>
                     </div>
                   </div>
                   <div class="col col-third mt-16 s-col-full">
@@ -133,12 +133,48 @@
                     <h3 class="place-heading">San Francisco</h3>
                     <p class="place-time">Sun 29 Nov 2016</p>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <button class="btn s-max-width" onclick="open_tickets()">Buy Tickets</button>
+                    <label for="buy-tickets-checkbox" class="btn s-max-width" >Buy Tickets</label>
                   </div>  
                   </div>
                 </div>
               </div>
             </div>
+            <!-- ==== -->
+          <input hidden type="checkbox" id="buy-tickets-checkbox" class="tickets-input">
+          <label for="buy-tickets-checkbox"  class="over-layer-tickets"></label>
+
+          <!--  buy tickets-->
+          <div id="tickets-screen">
+            <div id="tickets">
+              <div id="header-tick">
+                  <label for="buy-tickets-checkbox" id="x-btn" class="tick-btn">X</label>
+                <div id="header-text">
+                  <h2 class="text-white text-center"><i class="ti-bag"></i> Tickets</h2>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div id="content-tick">
+                <p class="content-tick-text"><i class="ti-shopping-cart-full">Tickets, $15 per person</i></p>
+                <div class="row">
+                  <div class="col col-full">
+                   <input class="content-tick-ipt" type="text" name="" placeholder="How many?" required id="">
+                  </div>
+                </div>
+              <p class="content-tick-text"><i class="ti-user">Send To</i></p>
+                <div class="row">
+                  <div class="col col-full">
+                   <input class="content-tick-ipt" type="email" name="" placeholder="Enter email" required id="">
+                  </div>
+                </div>
+                <button id="pay-btn" class="tick-btn">PAY <i class="ti-check"></i></button>
+                <div id="footer-tick-left">
+                  <label for="buy-tickets-checkbox" id="close-btn" class="tick-btn">Close<i class="ti-close"></i></label>
+                </div>
+                <div id="footer-tick-right"><p>Need <a target="_blank" href="https://www.google.com.vn/?hl=vi">help?</a></p></div>  
+              </div>
+              </div>
+          </div>
+
           </div>
           <div class="clear"></div>
         
@@ -194,37 +230,6 @@
 <!-- end main -->
       </div>
 
-  <div id="tickets-screen">
-    <div id="tickets">
-      <div id="header-tick">
-          <button id="x-btn" class="tick-btn" onclick="close_tickets()">X</button>
-        <div id="header-text">
-          <h2 class="text-white text-center"><i class="ti-bag"></i> Tickets</h2>
-        </div>
-      </div>
-      <div class="clear"></div>
-      <div id="content-tick">
-        <p class="content-tick-text"><i class="ti-shopping-cart-full">Tickets, $15 per person</i></p>
-        <div class="row">
-          <div class="col col-full">
-           <input class="content-tick-ipt" type="text" name="" placeholder="How many?" required id="">
-          </div>
-        </div>
-      <p class="content-tick-text"><i class="ti-user">Send To</i></p>
-        <div class="row">
-          <div class="col col-full">
-           <input class="content-tick-ipt" type="email" name="" placeholder="Enter email" required id="">
-          </div>
-        </div>
-        <button id="pay-btn" class="tick-btn">PAY <i class="ti-check"></i></button>
-        <div id="footer-tick-left">
-          <button id="close-btn" class="tick-btn" onclick="close_tickets()">Close<i class="ti-close"></i></button>
-        </div>
-        <div id="footer-tick-right"><p>Need <a target="_blank" href="https://www.google.com.vn/?hl=vi">help?</a></p></div>  
-      </div>
-      </div>
-  </div>
-  
   <script src="./assets/js/my.js"></script>
 </body>
 </html>
