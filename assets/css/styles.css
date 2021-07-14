@@ -71,6 +71,7 @@ html{
     display: inline-block;
     margin-top: 15px;
     border: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover{
@@ -253,7 +254,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url(/assets/img/chicago.jpg) top center / cover no-repeat;
+    background: url(../img/chicago.jpg) top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -272,6 +273,7 @@ html{
 #slider .text-p{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 .content-section{
@@ -412,6 +414,14 @@ html{
 .contact-inf{
     font-size: 18px;
     line-height: 1.5;
+}
+
+.contact-inf a{
+    opacity: 0.8;
+}
+
+.contact-inf a:hover{
+    opacity: 1;
 }
 
 .contact-inf i[class*="ti-"]{
@@ -566,14 +576,31 @@ html{
 
 /* Mobile  Tablet*/
 @media (max-width:63.9975em){
-    .nav_bars-btn{
-        display: block;
+    .btn{
+        padding: 15px 16px;
     }
 
-    #nav-pc,.subnav-pc{
-        display: none;
+    .contact-inf{
+        line-height: 2;
     }
-    
+
+    .content-tick-ipt,
+    .adress-inf .form-control{
+        padding: 15px;
+    }
+
+    #footer .social{
+        font-size: 48px;
+    }  
+
+    #footer a{
+        padding: 16px 0px;
+        display: inline-block;
+    }
+
+    #footer .social i{
+        margin: 0 16px;
+    }
 }
 /* Tablet */
 @media (min-width:46.25em) and (max-width:63.9975em){
@@ -583,9 +610,25 @@ html{
 }
 
 /* Mobile */
-@media (max-width:46.25em){
+@media (max-width: 46.1875em){
     .s-col-full,.s-max-width{
         width: 100%;
+    }
+  
+    .s-mt-8{
+        margin-top: 8px;
+    }
+
+    .btn{
+        text-align: center;
+    }
+
+    .nav_bars-btn{
+        display: block;
+    }
+
+    #nav-pc,.subnav-pc{
+        display: none;
     }
 
     #content #about-inf-member{
@@ -602,11 +645,7 @@ html{
     }
 
     .adress-inf{
-        margin-top: 16px;
-    }
-
-    .s-mt-8{
-        margin-top: 8px;
+        margin-top: 32px;
     }
 }
 
